@@ -9,10 +9,10 @@ function EmployeeCard(props) {
                 src={props.image}
                 alt="employee"
             />
-            <p className="font-bold text-md">{props.name}</p>
+            {/* <p className="font-bold text-md">{props.name}</p>
             <p>{props.dept}</p>
             <p className="text-blue-500">{props.email}</p>
-            <p>{props.phone}</p>
+            <p>{props.phone}</p> */}
         </div>
     );
 }

@@ -1,10 +1,11 @@
 // main dependencies
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Wrapper from "./components/Wrapper";
 // import pages here
 import Directory from "./pages/Directory";
 // import components here
+import Navbar from "./components/Navbar";
+import Wrapper from "./components/Wrapper";
 
 function App() {
   return (

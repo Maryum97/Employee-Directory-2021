@@ -6,7 +6,13 @@ function EmployeeCardList({ employees }) {
         // loop through all the employees and return the following properties
         // from EmployeeCard component
         employees.map(employee => {
-            <EmployeeCard />
+            <EmployeeCard
+                key={employee.id}
+                image={employee.image}
+                name={employee.name}
+                dept={employee.department}
+                email={employee.email}
+                phone={employee.phone} />
         })
     )
 }

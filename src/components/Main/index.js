@@ -1,11 +1,11 @@
 import React from "react";
-import EmployeeCardList from "../EmployeeCardList";
+import EmployeeCard from "../EmployeeCard";
 import "./style.css";
 
 function Main() {
     return (
         <div className="main">
-            {/* <EmployeeCardList /> */}
+            <EmployeeCard />
         </div>
     )
 }

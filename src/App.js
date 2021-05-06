@@ -6,6 +6,7 @@ import Directory from "./pages/Directory";
 // import components here
 import Navbar from "./components/Navbar";
 import Wrapper from "./components/Wrapper";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Wrapper>
           <Route exact path="/" component={Directory}/>
         </Wrapper>
+        <Footer />
       </div>
     </Router>
   );

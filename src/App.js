@@ -13,9 +13,7 @@ function App() {
     <Router>
       <div>
         <Navbar />
-        <Wrapper>
-          <Route exact path="/" component={Directory}/>
-        </Wrapper>
+        <Wrapper />
         <Footer />
       </div>
     </Router>

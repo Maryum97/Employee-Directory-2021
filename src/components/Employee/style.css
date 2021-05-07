@@ -2,3 +2,8 @@
     background: bisque;
     padding: 2%;
 }
+
+.name {
+    font-size: larger;
+    font-weight: 600;
+}

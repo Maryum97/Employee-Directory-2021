@@ -33,7 +33,7 @@ function EmployeeCard() {
     function getSearchResults() {
         console.log('Searching for: ' + search);
         const searchedEmployee = employees.filter(employee =>
-            search.indexOf(employee.firstName) > -1 || search.indexOf(employees.lastName) > -1
+            search.indexOf(employee.firstName) > -1 || search.indexOf(employee.lastName) > -1
         );
         setEmployees(searchedEmployee);
     }

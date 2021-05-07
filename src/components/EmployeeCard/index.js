@@ -32,10 +32,8 @@ function EmployeeCard() {
     // load search results on page
     function getSearchResults() {
         console.log('Searching for: ' + search);
-        console.log(search);
-        console.log(employees);
-        const searchedEmployee = employees.filter(target_employee =>
-            search.toLowerCase() === target_employee.firstName.toLowerCase() || search.toLowerCase() === target_employee.lastname.toLowerCase()
+        const searchedEmployee = employees.filter(employee =>
+            search.indexOf(employee.firstName) > -1 || search.indexOf(employees.lastName) > -1
         );
         setEmployees(searchedEmployee);
     }

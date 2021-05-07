@@ -34,7 +34,7 @@ function SearchForm(props) {
                     class="btn btn-danger"
                     onClick={props.clearSearch}
                 >
-                    Clear Search/Reset
+                    Reset Search
                 </button>
             </div>
 

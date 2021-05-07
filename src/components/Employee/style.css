@@ -1,8 +1,7 @@
-thead {
-    background: darkgray;
+tr {
+    background: rgb(164, 232, 255);
 }
 
 td {
     padding: 5%;
-    text-align: center;
 }

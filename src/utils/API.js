@@ -8,8 +8,9 @@ export default {
         .then(res => {
             console.log(res);
             const employees = res.data.results;
-            return employees.map(employee => {
+            return employees.map((employee, i) => {
                 return {
+                    key: i,
                     title: employee.name.title,
                     firstName: employee.name.first,
                     lastName: employee.name.last,

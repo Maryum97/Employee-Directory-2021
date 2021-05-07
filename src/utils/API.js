@@ -16,6 +16,8 @@ export default {
                     age: employee.dob.age,
                     phone: employee.phone,
                     email: employee.email,
+                    city: employee.location.city,
+                    country: employee.location.country,
                     picture: employee.picture.large
                 }
             });

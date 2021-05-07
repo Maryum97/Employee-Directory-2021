@@ -33,15 +33,13 @@ function EmployeeCard() {
     function getSearchResults() {
         console.log('Searching for: ' + search);
         const searchedEmployee = employees.filter(employee =>
-            search.indexOf(employee.name.first) > -1 || search.indexOf(employees.name.last) > -1
+            search.indexOf(employee.firstName) > -1 || search.indexOf(employees.lastName) > -1
         );
         setEmployees(searchedEmployee);
     }
 
     function handleInputChange(e) {
-        setEmployees({
-            [e.target.name]: e.target.value
-        });
+        setSearch(e.target.value);
     }
 
     function handleFormSubmit(e) {

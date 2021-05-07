@@ -1,9 +1,8 @@
-.single-employee {
-    background: bisque;
-    padding: 2%;
+thead {
+    background: darkgray;
 }
 
-.name {
-    font-size: larger;
-    font-weight: 600;
+td {
+    padding: 3%;
+    text-align: center;
 }

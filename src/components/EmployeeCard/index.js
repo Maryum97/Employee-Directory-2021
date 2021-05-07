@@ -27,17 +27,20 @@ function EmployeeCard() {
     return (
         <div className="employee-card">
             <p>Hello, here is the list of employees!</p>
-            <Employee
-                title={employee.title}
-                firstName={employee.firstName}
-                lastName={employee.lastName}
-                age={employee.age}
-                phone={employee.phone}
-                email={employee.email}
-                city={employee.city}
-                country={employee.country}
-                picture={employee.picture}
-            />
+            {employees.map((employee => {
+                <Employee
+                    title={employee.title}
+                    firstName={employee.firstName}
+                    lastName={employee.lastName}
+                    age={employee.age}
+                    phone={employee.phone}
+                    email={employee.email}
+                    city={employee.city}
+                    country={employee.country}
+                    picture={employee.picture}
+                />
+            }))}
+
         </div>
     );
 }

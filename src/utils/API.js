@@ -6,7 +6,6 @@ export default {
         return axios
         .get("https://randomuser.me/api/?results=20") // to loop (map) through an array of results=[number of employees in array]
         .then(res => {
-            console.log(res);
             const employees = res.data.results;
             return employees.map((employee, i) => {
                 return {

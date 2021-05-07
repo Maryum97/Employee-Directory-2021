@@ -5,11 +5,13 @@
 This application is covered by the MIT License.
 
 ## 🔍 Description
-This repository contains the homework assignment conducted through the teaching facilities of the Univesity of Birmingham, in the third phase of the Coding Bootcamp; a web application by the name "Employee Directory".
+This repository contains the homework assignment conducted through the teaching facilities of the Univesity of Birmingham, in the third phase of the Coding Bootcamp; a web application by the name "Employee Directory". This application was made possible and simplified by making use of the very popular <b>React.js</b> framework. Different "components" have been put together, with JavaScript functionality added to each, to create a singular more complex application, which is very useful for managers who wish to keep track of their employees, although the generic "employees" used in this app are retrieved using API calls.
+
+Using this application is very easy; once the user lands onto the main page, ...
 
 ## Table of Contents
 - [Description](#description)
-- [Installation](#installation)
+- [Installations](#installations)
 - [Instructions](#instructions)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -17,19 +19,25 @@ This repository contains the homework assignment conducted through the teaching 
 - [Credits](#credits)
 - [Questions](#questions)
 
-## 💾 Installation
-In order to install the app, you can simply gain access to this repository and clone it after having installed the following applications on your local device:
+## 💾 Installations
+You can simply gain access to this repository after having created a Github account, and with the following applications installed on your local device:
 
 1. VS Code
 2. Git Bash/Terminal
 3. Node.js
 
 ## ⚙️ Instructions
-After installing the above, run the following commands in the local terminal in VS Code:
+After installing the above, clone the repository to your local device, and run the following commands in the local terminal in VS Code:
 
 > // to install the node modules
 <br></br>
 > npm install
+
+<br>
+
+> // to install react-dom, axios, and bootstrap, a few of the main dependancies (libraries)
+<br></br>
+> npm install react-dom axios bootstrap
 
 <br>
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-function SearchForm() {
+function SearchForm(props) {
     return (
         <div className="search-form row g-2">
 
@@ -9,13 +9,25 @@ function SearchForm() {
             </div>
 
             <div className="col-8">
-                <input type="search" className="form-control" aria-describedby="search-help" placeholder="Search"></input>
+                <input
+                    type="search"
+                    className="form-control"
+                    aria-describedby="search-help"
+                    placeholder="Search"
+                    onChange={props.handleInputChange}
+                />
             </div>
 
             <div className="col-2">
-                <button type="button" class="btn btn-primary">Find Employee</button>
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                    onClick={props.handleFormSubmit}
+                    >
+                    Find Employee
+                </button>
             </div>
-            
+
             <div className="col-1">
 
             </div>

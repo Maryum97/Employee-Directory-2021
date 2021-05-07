@@ -4,7 +4,7 @@ function SearchForm() {
     return (
         <div className="search-form row g-2">
 
-            <div className="col-2">
+            <div className="col-1">
 
             </div>
 
@@ -13,6 +13,10 @@ function SearchForm() {
             </div>
 
             <div className="col-2">
+                <button type="button" class="btn btn-primary">Find Employee</button>
+            </div>
+            
+            <div className="col-1">
 
             </div>
 

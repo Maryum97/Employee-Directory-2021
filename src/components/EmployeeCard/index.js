@@ -3,7 +3,7 @@ import API from "../../utils/API";
 import Employee from "../Employee";
 
 function EmployeeCard() {
-    // declare state variable for employees
+    // declare state variables
     const [employee, setEmployee] = useState({});
     const [employees, setEmployees] = useState([]);
 
@@ -16,19 +16,22 @@ function EmployeeCard() {
     // API call to fetch an employee
     function loadEmployees() {
         API.fetchEmployees()
-        .then(employees => {
-            setEmployees(employees);
-            setEmployee(employees[0]);
-        })
+            .then(employees => {
+                setEmployees(employees);
+                setEmployee(employees[0]);
+            })
 
-        .catch(err => console.log(err));
+            .catch(err => console.log(err));
     }
 
     return (
         <div className="employee-card">
             <p>Hello, here is the list of employees!</p>
-            <Employee 
-            name={employee.name}
+            <Employee
+                title={employee.title}
+                firstName={employee.firstName}
+                lastName={employee.lastName}
+                email={employee.email}
             />
         </div>
     );

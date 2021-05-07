@@ -27,7 +27,7 @@ function EmployeeCard() {
     return (
         <div className="employee-card">
             <p>Hello, here is the list of employees!</p>
-            {employees.map((employee => {
+            {[...employees].map((employee => (
                 <Employee
                     title={employee.title}
                     firstName={employee.firstName}
@@ -39,8 +39,7 @@ function EmployeeCard() {
                     country={employee.country}
                     picture={employee.picture}
                 />
-            }))}
-
+            )))}
         </div>
     );
 }

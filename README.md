@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+<h1 style="align: center;">Employee Directory</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<br />
+This application is covered by the MIT License.
 
-## Available Scripts
+## 🔍 Description
+This repository contains the homework assignment conducted through the teaching facilities of the Univesity of Birmingham, in the third phase of the Coding Bootcamp; a web application by the name "Employee Directory".
 
-In the project directory, you can run:
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Instructions](#instructions)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Credits](#credits)
+- [Questions](#questions)
 
-### `npm start`
+## 💾 Installation
+In order to install the app, you can simply gain access to this repository and clone it after having installed the following applications on your local device:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. VS Code
+2. Git Bash/Terminal
+3. Node.js
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## ⚙️ Instructions
+After installing the above, run the following commands in the local terminal in VS Code:
 
-### `npm test`
+> // to install the node modules
+<br></br>
+> npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
 
-### `npm run build`
+> // to run the server in the browser 
+<br></br>
+> npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 💻 Usage
+The app is as simple to use as explained in the description above: simply ...
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 👪 Contributing
+If you wish to contribute to my app, contact me using the details below and gain access to my Github repository with your Github account today! Create your own branch and make amendments to my code, to make improvements or for marketing purposes.
 
-### `npm run eject`
+## ✏️ Tests
+There were no particular test that this app has been made to pass, except for ...
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 💐 Credits
+I used quite a bit of help from the following sources:
+1. YouTube.com
+2. W3Schools.com
+3. StackOverflow.com
+4. Github.com
+5. AskBCS Learning Assistants
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ✋ Questions
+If you have any questions, feel free to contact me using the details provided below:<br />
+<br />
+:octocat: Find me on GitHub: [Maryum97](https://github.com/Maryum97)<br />
+<br />
+✉️ Email me with any questions: maryumbokhari97@gmail.com<br /><br />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+_This README was generated with ❤️ by [README-generator](https://github.com/jpd61/README-generator) 🔥🔥🔥_

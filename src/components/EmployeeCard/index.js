@@ -38,13 +38,87 @@ function EmployeeCard() {
         setEmployees(searchedEmployee);
     }
 
+    // load results based on name typed in input
     function handleInputChange(e) {
         setSearch(e.target.value);
     }
 
+    // load results just after clicking on the button
     function handleFormSubmit(e) {
         e.preventDefault();
         getSearchResults(search);
+    }
+
+    // sort results by age (in ascending order)
+    function sortByAge() {
+        const sorted = employees.sort((result1, result2) => {
+            if (result1.age < result2.age) {
+                return -1;
+            }
+
+            if (result1.age > result2.age) {
+                return 1;
+            }
+
+            return 0;
+        });
+
+        console.log('Sorted list: ' + sorted);
+        setEmployees([...sorted]);
+    }
+
+    // sort results just after clicking on button
+    function handleSortByAge(e) {
+        e.preventDefault();
+        sortByAge();
+    }
+
+    // sort results in alphabetical order (first name)
+    function sortAlphabetical() {
+        const sorted = employees.sort((result1, result2) => {
+            if (result1.firstName < result2.firstName) {
+                return -1;
+            }
+
+            if (result1.firstName > result2.firstName) {
+                return 1;
+            }
+
+            return 0;
+        });
+
+        console.log('Sorted list: ' + sorted);
+        setEmployees([...sorted]);
+    }
+
+    // sort results just after clicking on button
+    function handleSortAlphabetical(e) {
+        e.preventDefault();
+        sortAlphabetical();
+    }
+
+    // sort results by phone number
+    function sortByPhone() {
+        const sorted = employees.sort((result1, result2) => {
+            if (result1.phone < result2.phone) {
+                return -1;
+            }
+
+            if (result1.phone > result2.phone) {
+                return 1;
+            }
+
+            return 0;
+        });
+
+        console.log('Sorted list: ' + sorted);
+        setEmployees([...sorted]);
+    }
+
+    // sort results just after clicking on button
+    function handleSortByPhone(e) {
+        e.preventDefault();
+        sortByPhone();
     }
 
     return (
@@ -55,6 +129,31 @@ function EmployeeCard() {
                 handleFormSubmit={handleFormSubmit}
             />
             <br></br>
+
+            <button
+                type="submit"
+                class="age btn btn-primary"
+                onClick={handleSortByAge}
+            >
+                Sort By Age
+                    </button>
+
+            <button
+                type="submit"
+                class="alphabetical btn btn-primary"
+                onClick={handleSortAlphabetical}
+            >
+                Sort Alphabetically
+                    </button>
+
+            <button
+                type="submit"
+                class="age btn btn-primary"
+                onClick={handleSortByPhone}
+            >
+                Sort By Phone No.
+                    </button>
+
             <TableColumm size="md-12">
                 <table className="table">
                     <thead>

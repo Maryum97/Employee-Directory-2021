@@ -33,12 +33,12 @@ function EmployeeCard() {
                 <table className="table">
                     <thead>
                         <tr>
-                            <th>Photo</th>
-                            <th>Full Name</th>
-                            <th>Age</th>
-                            <th>Location</th>
-                            <th>Phone</th>
-                            <th>Email</th>
+                            <th scope="col">Full Name</th>
+                            <th scope="col">Photo</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Email</th>
                         </tr>
                     </thead>
                     {[...employees].map((employee => (

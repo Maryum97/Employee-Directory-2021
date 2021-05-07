@@ -11,7 +11,7 @@ export default {
                 return {
                     name: employee.name.first
                 }
-            })
+            });
         })
     }
 }

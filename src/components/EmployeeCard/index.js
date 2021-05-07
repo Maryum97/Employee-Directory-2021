@@ -27,7 +27,9 @@ function EmployeeCard() {
     return (
         <div className="employee-card">
             <p>Hello, here is the list of employees!</p>
-            <Employee />
+            <Employee 
+            name={employee.name}
+            />
         </div>
     );
 }

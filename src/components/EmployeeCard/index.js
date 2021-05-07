@@ -31,7 +31,10 @@ function EmployeeCard() {
                 title={employee.title}
                 firstName={employee.firstName}
                 lastName={employee.lastName}
+                age={employee.age}
+                phone={employee.phone}
                 email={employee.email}
+                picture={employee.picture}
             />
         </div>
     );

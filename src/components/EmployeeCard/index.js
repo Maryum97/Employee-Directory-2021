@@ -32,8 +32,10 @@ function EmployeeCard() {
     // load search results on page
     function getSearchResults() {
         console.log('Searching for: ' + search);
-        const searchedEmployee = employees.filter(employee =>
-            search === employee.firstName.toLowerCase() || search === employee.lastname.toLowerCase()
+        console.log(search);
+        console.log(employees);
+        const searchedEmployee = employees.filter(target_employee =>
+            search.toLowerCase() === target_employee.firstName.toLowerCase() || search.toLowerCase() === target_employee.lastname.toLowerCase()
         );
         setEmployees(searchedEmployee);
     }
@@ -45,7 +47,6 @@ function EmployeeCard() {
     function handleFormSubmit(e) {
         e.preventDefault();
         getSearchResults(search);
-        console.log(search);
     }
 
     return (

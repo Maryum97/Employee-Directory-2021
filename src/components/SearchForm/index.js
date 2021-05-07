@@ -4,11 +4,7 @@ function SearchForm(props) {
     return (
         <div className="search-form row g-2">
 
-            <div className="col-1">
-
-            </div>
-
-            <div className="col-8">
+            <div className="col-7">
                 <input
                     type="search"
                     className="form-control"
@@ -17,19 +13,29 @@ function SearchForm(props) {
                     onChange={props.handleInputChange}
                 />
             </div>
+            
+            <div className="col-1">
+
+            </div>
 
             <div className="col-2">
                 <button
                     type="submit"
                     class="btn btn-primary"
                     onClick={props.handleFormSubmit}
-                    >
+                >
                     Find Employee
                 </button>
             </div>
 
-            <div className="col-1">
-
+            <div className="col-2">
+                <button
+                    type="submit"
+                    class="btn btn-danger"
+                    onClick={props.clearSearch}
+                >
+                    Clear Search/Reset
+                </button>
             </div>
 
         </div>

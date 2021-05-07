@@ -120,6 +120,13 @@ function EmployeeCard() {
         e.preventDefault();
         sortByPhone();
     }
+    
+    // clear search
+    function clearSearch (e) {
+        e.preventDefault();
+        setSearch("");
+        loadEmployees();
+    }
 
     return (
         <div className="employee-card">
@@ -127,6 +134,7 @@ function EmployeeCard() {
                 value={search}
                 handleInputChange={handleInputChange}
                 handleFormSubmit={handleFormSubmit}
+                clearSearch={clearSearch}
             />
             <br></br>
 

@@ -3,12 +3,14 @@ import React, { useState, useEffect } from "react";
 import API from "../../utils/API";
 // import components here
 import Employee from "../Employee";
-import TableColumm from "../TableColumn"
+import TableColumm from "../TableColumn";
+import SearchForm from "../SearchForm";
 
 function EmployeeCard() {
     // declare state variables
     const [employee, setEmployee] = useState({});
     const [employees, setEmployees] = useState([]);
+    const [search, setSearch] = useState('');
 
     // when the component mounts, make call to get random employees
     useEffect(() => {
@@ -21,20 +23,46 @@ function EmployeeCard() {
         API.fetchEmployees()
             .then(employees => {
                 setEmployees(employees);
-                setEmployee(employees[0]);
+                setEmployee(employee);
             })
 
             .catch(err => console.log(err));
     }
 
+    // load search results on page
+    function getSearchResults() {
+        console.log('Searching for: ' + search);
+        const searchedEmployee = employees.filter(employee =>
+            search.indexOf(employee.name.first) > -1 || search.indexOf(employees.name.last) > -1
+        );
+        setEmployees(searchedEmployee);
+    }
+
+    function handleInputChange(e) {
+        setEmployees({
+            [e.target.name]: e.target.value
+        });
+    }
+
+    function handleFormSubmit(e) {
+        e.preventDefault();
+        getSearchResults(search);
+    }
+
     return (
         <div className="employee-card">
+            <SearchForm
+                value={search}
+                handleInputChange={handleInputChange}
+                handleFormSubmit={handleFormSubmit}
+            />
+            <br></br>
             <TableColumm size="md-12">
                 <table className="table">
                     <thead>
                         <tr>
-                            <th scope="col">Full Name</th>
                             <th scope="col">Photo</th>
+                            <th scope="col">Full Name</th>
                             <th scope="col">Age</th>
                             <th scope="col">Location</th>
                             <th scope="col">Phone</th>

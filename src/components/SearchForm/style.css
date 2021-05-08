@@ -1,0 +1,7 @@
+.button, .input {
+    height: 70px;
+}
+
+.main-btn, .form-control {
+    height: 90%;
+}

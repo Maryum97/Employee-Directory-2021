@@ -22,7 +22,7 @@ function SearchForm(props) {
             <div className="button col-2">
                 <button
                     type="submit"
-                    class="btn main-btn btn-secondary"
+                    class="btn main-btn btn-primary"
                     onClick={props.handleFormSubmit}
                 >
                     Find Employee

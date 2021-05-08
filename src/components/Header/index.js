@@ -5,7 +5,7 @@ function Header() {
     return (
         <header className="header">
             <h1>Employee Directory</h1>
-            <p>Search for an employee or sort by Name or Category:</p>
+            <p>Search for an employee by First or Last name, or sort all employees by Category</p>
         </header>
     );
 }

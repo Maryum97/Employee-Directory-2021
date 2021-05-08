@@ -140,7 +140,7 @@ function EmployeeCard() {
 
             <button
                 type="submit"
-                class="age btn btn-primary"
+                class="age btn btn-info"
                 onClick={handleSortByAge}
             >
                 Sort By Age
@@ -148,7 +148,7 @@ function EmployeeCard() {
 
             <button
                 type="submit"
-                class="alphabetical btn btn-primary"
+                class="alphabetical btn btn-info"
                 onClick={handleSortAlphabetical}
             >
                 Sort Alphabetically
@@ -156,7 +156,7 @@ function EmployeeCard() {
 
             <button
                 type="submit"
-                class="age btn btn-primary"
+                class="age btn btn-info"
                 onClick={handleSortByPhone}
             >
                 Sort By Phone No.

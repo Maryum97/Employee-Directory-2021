@@ -45,165 +45,167 @@ function EmployeeCard() {
             if (employee.title.toLowerCase() == search) {
                 return search;
             }
-        
-    });
 
-    setEmployees(searchedEmployee);
-}
+        });
 
-// load results based on name typed in input
-function handleInputChange(e) {
-    setSearch(e.target.value);
-}
+        setEmployees(searchedEmployee);
+    }
 
-// load results just after clicking on the button
-function handleFormSubmit(e) {
-    e.preventDefault();
-    getSearchResults(search);
-}
+    // load results based on name typed in input
+    function handleInputChange(e) {
+        setSearch(e.target.value);
+    }
 
-// sort results by age (in ascending order)
-function sortByAge() {
-    const sorted = employees.sort((result1, result2) => {
-        if (result1.age < result2.age) {
-            return -1;
-        }
+    // load results just after clicking on the button
+    function handleFormSubmit(e) {
+        e.preventDefault();
+        getSearchResults(search);
+    }
 
-        if (result1.age > result2.age) {
-            return 1;
-        }
+    // sort results by age (in ascending order)
+    function sortByAge() {
+        const sorted = employees.sort((result1, result2) => {
+            if (result1.age < result2.age) {
+                return -1;
+            }
 
-        return 0;
-    });
+            if (result1.age > result2.age) {
+                return 1;
+            }
 
-    console.log('Sorted list: ' + sorted);
-    setEmployees([...sorted]);
-}
+            return 0;
+        });
 
-// sort results just after clicking on button
-function handleSortByAge(e) {
-    e.preventDefault();
-    sortByAge();
-}
+        console.log('Sorted list: ' + sorted);
+        setEmployees([...sorted]);
+    }
 
-// sort results in alphabetical order (first name)
-function sortAlphabetical() {
-    const sorted = employees.sort((result1, result2) => {
-        if (result1.firstName < result2.firstName) {
-            return -1;
-        }
+    // sort results just after clicking on button
+    function handleSortByAge(e) {
+        e.preventDefault();
+        sortByAge();
+    }
 
-        if (result1.firstName > result2.firstName) {
-            return 1;
-        }
+    // sort results in alphabetical order (first name)
+    function sortAlphabetical() {
+        const sorted = employees.sort((result1, result2) => {
+            if (result1.firstName < result2.firstName) {
+                return -1;
+            }
 
-        return 0;
-    });
+            if (result1.firstName > result2.firstName) {
+                return 1;
+            }
 
-    console.log('Sorted list: ' + sorted);
-    setEmployees([...sorted]);
-}
+            return 0;
+        });
 
-// sort results just after clicking on button
-function handleSortAlphabetical(e) {
-    e.preventDefault();
-    sortAlphabetical();
-}
+        console.log('Sorted list: ' + sorted);
+        setEmployees([...sorted]);
+    }
 
-// sort results by phone number
-function sortByPhone() {
-    const sorted = employees.sort((result1, result2) => {
-        if (result1.phone < result2.phone) {
-            return -1;
-        }
+    // sort results just after clicking on button
+    function handleSortAlphabetical(e) {
+        e.preventDefault();
+        sortAlphabetical();
+    }
 
-        if (result1.phone > result2.phone) {
-            return 1;
-        }
+    // sort results by phone number
+    function sortByPhone() {
+        const sorted = employees.sort((result1, result2) => {
+            if (result1.phone < result2.phone) {
+                return -1;
+            }
 
-        return 0;
-    });
+            if (result1.phone > result2.phone) {
+                return 1;
+            }
 
-    console.log('Sorted list: ' + sorted);
-    setEmployees([...sorted]);
-}
+            return 0;
+        });
 
-// sort results just after clicking on button
-function handleSortByPhone(e) {
-    e.preventDefault();
-    sortByPhone();
-}
+        console.log('Sorted list: ' + sorted);
+        setEmployees([...sorted]);
+    }
 
-// clear search
-function clearSearch(e) {
-    e.preventDefault();
-    setSearch("");
-    loadEmployees();
-}
+    // sort results just after clicking on button
+    function handleSortByPhone(e) {
+        e.preventDefault();
+        sortByPhone();
+    }
 
-return (
-    <div className="employee-card">
-        <SearchForm
-            value={search}
-            handleInputChange={handleInputChange}
-            handleFormSubmit={handleFormSubmit}
-            clearSearch={clearSearch}
-        />
-        <br></br>
+    // clear search
+    function clearSearch(e) {
+        e.preventDefault();
+        setSearch("");
+        loadEmployees();
+    }
 
-        <button
-            type="submit"
-            class="age btn btn-info"
-            onClick={handleSortByAge}
-        >
-            Sort By Age
+    return (
+        <div className="container">
+            <div className="employee-card">
+                <SearchForm
+                    value={search}
+                    handleInputChange={handleInputChange}
+                    handleFormSubmit={handleFormSubmit}
+                    clearSearch={clearSearch}
+                />
+                <br></br>
+
+                <button
+                    type="submit"
+                    class="age btn btn-info"
+                    onClick={handleSortByAge}
+                >
+                    Sort By Age
                     </button>
 
-        <button
-            type="submit"
-            class="alphabetical btn btn-info"
-            onClick={handleSortAlphabetical}
-        >
-            Sort Alphabetically
+                <button
+                    type="submit"
+                    class="alphabetical btn btn-info"
+                    onClick={handleSortAlphabetical}
+                >
+                    Sort Alphabetically
                     </button>
 
-        <button
-            type="submit"
-            class="age btn btn-info"
-            onClick={handleSortByPhone}
-        >
-            Sort By Phone No.
+                <button
+                    type="submit"
+                    class="age btn btn-info"
+                    onClick={handleSortByPhone}
+                >
+                    Sort By Phone No.
                     </button>
 
-        <TableColumm size="md-12">
-            <table className="table">
-                <thead>
-                    <tr>
-                        <th scope="col">Photo</th>
-                        <th scope="col">Full Name</th>
-                        <th scope="col">Age</th>
-                        <th scope="col">Location</th>
-                        <th scope="col">Phone</th>
-                        <th scope="col">Email</th>
-                    </tr>
-                </thead>
-                {[...employees].map((employee => (
-                    <Employee
-                        title={employee.title}
-                        firstName={employee.firstName}
-                        lastName={employee.lastName}
-                        age={employee.age}
-                        phone={employee.phone}
-                        email={employee.email}
-                        city={employee.city}
-                        country={employee.country}
-                        picture={employee.picture}
-                    />
-                )))}
-            </table>
-        </TableColumm>
-    </div>
-);
+                <TableColumm size="md-12">
+                    <table className="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Photo</th>
+                                <th scope="col">Full Name</th>
+                                <th scope="col">Age</th>
+                                <th scope="col">Location</th>
+                                <th scope="col">Phone</th>
+                                <th scope="col">Email</th>
+                            </tr>
+                        </thead>
+                        {[...employees].map((employee => (
+                            <Employee
+                                title={employee.title}
+                                firstName={employee.firstName}
+                                lastName={employee.lastName}
+                                age={employee.age}
+                                phone={employee.phone}
+                                email={employee.email}
+                                city={employee.city}
+                                country={employee.country}
+                                picture={employee.picture}
+                            />
+                        )))}
+                    </table>
+                </TableColumm>
+            </div>
+        </div>
+    );
 }
 
 export default EmployeeCard;

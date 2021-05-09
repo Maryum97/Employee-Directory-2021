@@ -5,9 +5,7 @@
 This application is covered by the MIT License.
 
 ## 🔍 Description
-This repository contains the homework assignment conducted through the teaching facilities of the Univesity of Birmingham, in the third phase of the Coding Bootcamp; a web application by the name "Employee Directory". This application was made possible and simplified by making use of the very popular <b>React.js</b> framework. Different "components" have been put together, with JavaScript functionality added to each, to create a singular more complex application, which is very useful for managers who wish to keep track of their employees, although the generic "employees" used in this app are retrieved using API calls.
-
-Using this application is very easy; once the user lands onto the main page, ...
+This repository contains the homework assignment conducted through the teaching facilities of the Univesity of Birmingham, in the third phase of the Coding Bootcamp; a web application by the name "Employee Directory". This application was made possible and simplified by making use of the very popular <b>React.js</b> framework. Different "components" have been put together, with JavaScript functionality added to each, to create a singular more complex application, which is very useful for managers who wish to keep track of their employees, although the generic "employees" used in this app are retrieved using an API call. The user is able to view all employees on the labding page, and they can filter employees by eith first or last name. The user can also sort employees by age, phone number, or in alphabetical order.
 
 ## Table of Contents
 - [Description](#description)
@@ -48,13 +46,13 @@ After installing the above, clone the repository to your local device, and run t
 <br>
 
 ## 💻 Usage
-The app is as simple to use as explained in the description above: simply ...
+The app is as simple to use as explained in the description above: simply open the link to the website and view all the employees in the table. Filter out the employees by writing the first OR last name in the search bar. On clicking the 'Find Employee' button, you will be presented with the employees who share the name you have searched for. To reset the search, simply click on the 'Reset Search' button, and the page will load a random list of employees into the table again. Using the three buttons provided, sort the employees with the respective purpose of each button, as suggested by the names: 'Sort By Age', 'Sort Alphabetically', and 'Sort By Phone Number'.
 
 ## 👪 Contributing
 If you wish to contribute to my app, contact me using the details below and gain access to my Github repository with your Github account today! Create your own branch and make amendments to my code, to make improvements or for marketing purposes.
 
 ## ✏️ Tests
-There were no particular test that this app has been made to pass, except for ...
+There were no particular test that this app has been made to pass, except for the app to be running in the browser 
 
 ## 💐 Credits
 I used quite a bit of help from the following sources:

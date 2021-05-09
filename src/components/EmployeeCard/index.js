@@ -190,6 +190,7 @@ function EmployeeCard() {
                         </thead>
                         {[...employees].map((employee => (
                             <Employee
+                                key={employee.key}
                                 title={employee.title}
                                 firstName={employee.firstName}
                                 lastName={employee.lastName}

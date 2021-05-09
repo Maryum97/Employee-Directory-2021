@@ -4,7 +4,7 @@ import "./style.css";
 function Employee(props) {
     return (
         <thead>
-            <tr>
+            <tr key={props.id}>
                 <th>
                     <img alt={props.firstName} src={props.picture}></img>
                 </th>

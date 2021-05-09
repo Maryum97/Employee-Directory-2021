@@ -18,8 +18,8 @@ function EmployeeCard() {
     }, []);
 
     // declare function to load employees
-    // API call to fetch an employee
-    function loadEmployees() {
+    // API call from API.js to fetch an employee
+    const loadEmployees = () => {
         API.fetchEmployees()
             .then(employees => {
                 setEmployees(employees);
@@ -34,15 +34,15 @@ function EmployeeCard() {
         console.log('Searching for: ' + search);
         const searchedEmployee = employees.filter(employee => {
 
-            if (employee.firstName.toLowerCase() == search) {
+            if (employee.firstName.toLowerCase() === search) {
                 return search;
             }
 
-            if (employee.lastName.toLowerCase() == search) {
+            if (employee.lastName.toLowerCase() === search) {
                 return search;
             }
 
-            if (employee.title.toLowerCase() == search) {
+            if (employee.title.toLowerCase() === search) {
                 return search;
             }
 
@@ -76,7 +76,6 @@ function EmployeeCard() {
             return 0;
         });
 
-        console.log('Sorted list: ' + sorted);
         setEmployees([...sorted]);
     }
 
@@ -100,7 +99,6 @@ function EmployeeCard() {
             return 0;
         });
 
-        console.log('Sorted list: ' + sorted);
         setEmployees([...sorted]);
     }
 
@@ -124,7 +122,6 @@ function EmployeeCard() {
             return 0;
         });
 
-        console.log('Sorted list: ' + sorted);
         setEmployees([...sorted]);
     }
 
@@ -143,68 +140,66 @@ function EmployeeCard() {
 
     return (
         <div className="container">
-            <div className="employee-card">
-                <SearchForm
-                    value={search}
-                    handleInputChange={handleInputChange}
-                    handleFormSubmit={handleFormSubmit}
-                    clearSearch={clearSearch}
-                />
-                <br></br>
+            <SearchForm
+                value={search}
+                handleInputChange={handleInputChange}
+                handleFormSubmit={handleFormSubmit}
+                clearSearch={clearSearch}
+            />
+            <br></br>
 
-                <button
-                    type="submit"
-                    className="age btn btn-info"
-                    onClick={handleSortByAge}
-                >
-                    Sort By Age
+            <button
+                type="submit"
+                className="age btn btn-info"
+                onClick={handleSortByAge}
+            >
+                Sort By Age
                     </button>
 
-                <button
-                    type="submit"
-                    className="alphabetical btn btn-info"
-                    onClick={handleSortAlphabetical}
-                >
-                    Sort Alphabetically
+            <button
+                type="submit"
+                className="alphabetical btn btn-info"
+                onClick={handleSortAlphabetical}
+            >
+                Sort Alphabetically
                     </button>
 
-                <button
-                    type="submit"
-                    className="age btn btn-info"
-                    onClick={handleSortByPhone}
-                >
-                    Sort By Phone No.
+            <button
+                type="submit"
+                className="age btn btn-info"
+                onClick={handleSortByPhone}
+            >
+                Sort By Phone No.
                     </button>
 
-                <TableColumm size="md-12">
-                    <table className="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Photo</th>
-                                <th scope="col">Full Name</th>
-                                <th scope="col">Age</th>
-                                <th scope="col">Location</th>
-                                <th scope="col">Phone</th>
-                                <th scope="col">Email</th>
-                            </tr>
-                        </thead>
-                        {[...employees].map((employee => (
-                            <Employee
-                                key={employee.key}
-                                title={employee.title}
-                                firstName={employee.firstName}
-                                lastName={employee.lastName}
-                                age={employee.age}
-                                phone={employee.phone}
-                                email={employee.email}
-                                city={employee.city}
-                                country={employee.country}
-                                picture={employee.picture}
-                            />
-                        )))}
-                    </table>
-                </TableColumm>
-            </div>
+            <TableColumm size="md-12">
+                <table className="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Photo</th>
+                            <th scope="col">Full Name</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Email</th>
+                        </tr>
+                    </thead>
+                    {[...employees].map((employee => (
+                        <Employee
+                            key={employee.key}
+                            title={employee.title}
+                            firstName={employee.firstName}
+                            lastName={employee.lastName}
+                            age={employee.age}
+                            phone={employee.phone}
+                            email={employee.email}
+                            city={employee.city}
+                            country={employee.country}
+                            picture={employee.picture}
+                        />
+                    )))}
+                </table>
+            </TableColumm>
         </div>
     );
 }

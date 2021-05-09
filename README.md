@@ -31,6 +31,8 @@ You can simply gain access to this repository after having created a Github acco
 2. Git Bash/Terminal
 3. Node.js
 
+Then in VSC terminal, install some dependencies as explained in the 'Instructions' section below.
+
 ## ⚙️ Instructions
 After installing the above, clone the repository to your local device, and run the following commands in the local terminal in VS Code:
 

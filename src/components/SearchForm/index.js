@@ -19,7 +19,7 @@ function SearchForm(props) {
                 <div className="button col-2">
                     <button
                         type="submit"
-                        class="btn main-btn btn-primary"
+                        className="btn main-btn btn-primary"
                         onClick={props.handleFormSubmit}
                     >
                         Find Employee
@@ -29,7 +29,7 @@ function SearchForm(props) {
                 <div className="button col-2">
                     <button
                         type="submit"
-                        class="btn main-btn btn-danger"
+                        className="btn main-btn btn-danger"
                         onClick={props.clearSearch}
                     >
                         Reset Search

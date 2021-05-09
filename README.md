@@ -5,7 +5,7 @@
 This application is covered by the MIT License.
 
 ## 🔍 Description
-This repository contains the homework assignment conducted through the teaching facilities of the Univesity of Birmingham, in the third phase of the Coding Bootcamp; a web application by the name "Employee Directory". This application was made possible and simplified by making use of the very popular <b>React.js</b> framework. Different "components" have been put together, with JavaScript functionality added to each, to create a singular more complex application, which is very useful for managers who wish to keep track of their employees, although the generic "employees" used in this app are retrieved using an API call. The user is able to view all employees on the labding page, and they can filter employees by eith first or last name. The user can also sort employees by age, phone number, or in alphabetical order.
+This repository contains the homework assignment conducted through the teaching facilities of the Univesity of Birmingham, in the third phase of the Coding Bootcamp; a web application by the name "Employee Directory". This application was made possible and simplified by making use of the very popular <b>React.js</b> framework. Different "components" have been put together, with JavaScript functionality added to each, to create a singular more complex application, which is very useful for managers who wish to keep track of their employees, although the generic "employees" used in this app are retrieved using an API call. The user is able to view all employees on the landing page, and they can filter employees by either first or last name. The user can also sort employees by age, phone number, or in alphabetical order.
 
 Here is what the delpoyed application looks like in the browser:
 ![App](https://user-images.githubusercontent.com/73832871/117571776-d85ebd00-b0c7-11eb-8f04-bf826b0ce832.png)
@@ -79,8 +79,9 @@ I used quite a bit of help from the following sources:
 1. YouTube.com
 2. W3Schools.com
 3. StackOverflow.com
-4. Github.com
-5. AskBCS Learning Assistants
+4. ReactJS.org
+5. Github.com
+6. AskBCS Learning Assistants
 
 ## ✋ Questions
 If you have any questions, feel free to contact me using the details provided below:<br />

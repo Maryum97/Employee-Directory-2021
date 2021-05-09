@@ -9,8 +9,7 @@ This repository contains the homework assignment conducted through the teaching 
 
 Here is what the delpoyed application looks like in the browser:
 ![App](https://user-images.githubusercontent.com/73832871/117571776-d85ebd00-b0c7-11eb-8f04-bf826b0ce832.png)
-
-<br></br>
+<br>
 
 Here is the link to the deployted application:
 <a href="https://maryum97.github.io/Employee-Directory-2021/">MyReactApp - Employee Directory</a>

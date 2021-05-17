@@ -11,8 +11,8 @@ Here is what the delpoyed application looks like in the browser:
 ![App](https://user-images.githubusercontent.com/73832871/117571776-d85ebd00-b0c7-11eb-8f04-bf826b0ce832.png)
 <br>
 
-Here is the link to the deployted application:
-<a href="https://maryum97.github.io/Employee-Directory-2021/">MyReactApp - Employee Directory</a>
+Here is the link to the deployted application on heroku:
+<a href="https://safe-temple-65370.herokuapp.com/">MyReactApp - Employee Directory</a>
 
 ## Table of Contents
 - [Description](#description)
@@ -70,7 +70,7 @@ The app is as simple to use as explained in the description above; it has made u
 7. React-dom from React libraries, for page connections (though not utilised in this assignment)
 8. React Hooks, for page functionality, in functional components
 
-The app has been deployed using github-pages.
+The app has been deployed using heroku.
 
 ## 👪 Contributing
 If you wish to contribute to my app, contact me using the details below and gain access to my Github repository with your Github account today! Create your own branch and make amendments to my code, to make improvements or for marketing purposes. There are several aspects about this application which show some room for improvement, such as the following:
